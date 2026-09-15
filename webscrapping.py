@@ -8,8 +8,8 @@ import smtplib
 #Dados de conexão
 servidor_smtp = "smtp.gmail.com"
 porta = 465
-email_remetente = ("EMAIL REMETENTE")
-senha_app = ("SENHA DO APP")
+email_remetente = ("EMAIL_REMETENTE")
+senha_app = ("SENHA_DO_APP")
 
 lista_vagas = []
 
@@ -24,8 +24,8 @@ headers = {
 
 msg = EmailMessage()
 msg["Subject"] = "Vagas estágios RJ"
-msg["From"] = "EMAIL REMETENTE"
-msg["To"] = "EMAIL DESTINATÁRIO"
+msg["From"] = "EMAIL_REMETENTE"
+msg["To"] = "EMAIL_DESTINATÁRIO"
 
 
 resposta = requests.get(url, headers = headers)
